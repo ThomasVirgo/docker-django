@@ -1,1 +1,2 @@
-- use ```docker exec -it <container-id> bash``` to get run migrations
+- use ```docker exec -it <container-id> bash``` to run migrations
+- if add more python modules e.g. djangorestframework then need to add that to requirements.txt and rebuild the web container with ```docker-compose up --build```
