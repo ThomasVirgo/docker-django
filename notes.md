@@ -1,0 +1,1 @@
+- use ```docker exec -it <container-id> bash``` to get run migrations
