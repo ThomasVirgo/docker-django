@@ -1,3 +1,4 @@
 - use ```docker exec -it <container-id> bash``` to run migrations
 - if add more python modules e.g. djangorestframework then need to add that to requirements.txt and rebuild the web container with ```docker-compose up --build```
 - to get token make a post request to auth/token with username and password payload in body of request
+- to register a new user make a post request to auth/register with username, password and password_confirmation in the body
