@@ -12,3 +12,6 @@ class Restaurant(models.Model):
     longitude = DecimalField(max_digits=9, decimal_places=6)
     rating = PositiveSmallIntegerField()
     author = ForeignKey(User, on_delete=CASCADE)
+
+    def __str__(self):
+        return self.name
