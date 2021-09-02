@@ -22,6 +22,7 @@ class UserRegistrationView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class RestaurantList(APIView):
+    permission_classes = [IsAuthenticated,]
     def get(self, request, format=None):
         restaurants = Restaurant.objects.all()
         serializer = RestaurantSerializer(restaurants, many=True)
